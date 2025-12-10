@@ -35,17 +35,16 @@ img{
   padding:24px 16px 40px;
 }
 
+/* 🔥 Remove espaço do topo */
 header{
   text-align:center;
   margin-bottom:32px;
+  margin-top:0 !important;
+  padding-top:0 !important;
 }
 
 .tag{
-  display:inline-block;
-  font-size:.78rem;
-  color:var(--azul-claro);
-  font-weight:600;
-  margin-bottom:6px;
+  display:none !important;
 }
 
 h1{
@@ -117,6 +116,7 @@ hr.linha{
   margin:26px 0;
 }
 
+/* Seções gerais */
 .section h2{
   text-align:center;
   font-size:1.6rem;
@@ -157,6 +157,7 @@ hr.linha{
   margin-bottom:3px;
 }
 
+/* Artistas */
 .artistas-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -180,6 +181,7 @@ hr.linha{
   font-weight:600;
 }
 
+/* Linha do tempo */
 .steps-timeline{
   position:relative;
   max-width:780px;
@@ -250,11 +252,15 @@ hr.linha{
   }
 }
 
+/* -------------------------------------------------- */
+/* 🔥 AJUSTE DA OFERTA — SEM ESPAÇOS */
+/* -------------------------------------------------- */
+
 .offer-box{
   background:var(--cinza-claro);
   border:1px solid #d9ddff;
   border-radius:14px;
-  padding:24px;
+  padding:16px !important;
   max-width:800px;
   margin:auto;
 }
@@ -263,14 +269,18 @@ hr.linha{
   text-align:center;
   font-size:1.4rem;
   font-weight:700;
-  margin-bottom:16px;
+  margin-bottom:6px !important;
+  padding-bottom:0 !important;
 }
 
+/* cola mockup + lista */
 .offer-flex{
   display:flex;
   flex-direction:column;
-  gap:20px;
+  gap:4px !important; /* antes era 20 */
   align-items:center;
+  margin-top:0 !important;
+  padding-top:0 !important;
 }
 
 @media(min-width:720px){
@@ -280,22 +290,22 @@ hr.linha{
 }
 
 .offer-img{
-  max-width:260px;
+  max-width:240px !important;
   width:100%;
-  border-radius:12px;
+  margin:0 !important;
+  padding:0 !important;
 }
 
-.preco{
-  text-align:center;
-  font-size:1.2rem;
-  margin-top:18px;
+.offer-list ul{
+  margin:0 !important;
+  padding-left:18px;
 }
 
-.preco .antigo{
-  text-decoration:line-through;
-  color:gray;
+.offer-list li{
+  margin-bottom:6px;
 }
 
+/* compra segura */
 .secure-img-below{
   max-width:260px;
   width:100%;
@@ -310,11 +320,14 @@ hr.linha{
   color:var(--cinza);
 }
 
+/* -------------------------------------------------- */
+/* 🔥 GARANTIA REDUZIDA (SEM SUMIR) */
+/* -------------------------------------------------- */
+
 .garantia-img{
-  max-width:300px;
-  width:100%;
-  display:block;
-  margin:0 auto 16px;
+  width:140px !important;
+  display:block !important;
+  margin:0 auto 14px auto !important;
 }
 
 .garantia-texto{
@@ -325,6 +338,7 @@ hr.linha{
   margin:0 auto;
 }
 
+/* Depoimentos */
 .depo-grid{
   display:grid;
   grid-template-columns:1fr;
@@ -387,4 +401,3 @@ footer{
   font-size:.8rem;
   color:#999;
 }
-
