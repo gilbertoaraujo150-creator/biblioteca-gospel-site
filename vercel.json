@@ -1,0 +1,8 @@
+{
+  "regions": ["gru1"],
+  "build": {
+    "env": {
+      "FORCE_EDGE_REGION": "gru1"
+    }
+  }
+}
