@@ -35,17 +35,16 @@ img{
   padding:24px 16px 40px;
 }
 
+/* 🔥 Ajuste 1 — remover espaço vazio do topo */
 header{
   text-align:center;
   margin-bottom:32px;
+  margin-top:0 !important;
+  padding-top:0 !important;
 }
 
 .tag{
-  display:inline-block;
-  font-size:.78rem;
-  color:var(--azul-claro);
-  font-weight:600;
-  margin-bottom:6px;
+  display:none !important;
 }
 
 h1{
@@ -250,11 +249,15 @@ hr.linha{
   }
 }
 
+/* -------------------------------------------------- */
+/* 🔥 Ajuste 2 — Seção de oferta sem buracos */
+/* -------------------------------------------------- */
+
 .offer-box{
   background:var(--cinza-claro);
   border:1px solid #d9ddff;
   border-radius:14px;
-  padding:24px;
+  padding:20px;
   max-width:800px;
   margin:auto;
 }
@@ -263,14 +266,17 @@ hr.linha{
   text-align:center;
   font-size:1.4rem;
   font-weight:700;
-  margin-bottom:16px;
+  margin-bottom:8px;
 }
 
+/* cola mockup + lista */
 .offer-flex{
   display:flex;
   flex-direction:column;
-  gap:20px;
+  gap:10px !important; /* antes era 20 */
   align-items:center;
+  margin-top:0 !important;
+  padding-top:0 !important;
 }
 
 @media(min-width:720px){
@@ -280,20 +286,19 @@ hr.linha{
 }
 
 .offer-img{
-  max-width:260px;
+  max-width:240px !important;
   width:100%;
-  border-radius:12px;
+  margin:0 !important;
+  padding:0 !important;
 }
 
-.preco{
-  text-align:center;
-  font-size:1.2rem;
-  margin-top:18px;
+.offer-list ul{
+  margin:0 !important;
+  padding-left:18px;
 }
 
-.preco .antigo{
-  text-decoration:line-through;
-  color:gray;
+.offer-list li{
+  margin-bottom:6px;
 }
 
 .secure-img-below{
@@ -310,11 +315,18 @@ hr.linha{
   color:var(--cinza);
 }
 
+/* -------------------------------------------------- */
+/* 🔥 Ajuste 3 — Garantia menor */
+/* -------------------------------------------------- */
+
 .garantia-img{
-  max-width:300px;
-  width:100%;
+  display:none; /* oculta a grande */
+}
+
+.garantia-img-small{
+  width:140px !important;
   display:block;
-  margin:0 auto 16px;
+  margin:0 auto 12px auto;
 }
 
 .garantia-texto{
@@ -353,7 +365,7 @@ hr.linha{
   object-fit:cover;
   object-position:center;
   margin:0 auto 8px auto;
-  border:3px solid var(--azul-claro);
+  border:3px solid(var(--azul-claro));
   display:block;
 }
 
