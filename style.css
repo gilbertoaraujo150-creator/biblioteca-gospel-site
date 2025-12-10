@@ -35,7 +35,7 @@ img{
   padding:24px 16px 40px;
 }
 
-/* 🔥 Ajuste 1 — remover espaço vazio do topo */
+/* 🔥 Remove espaço do topo */
 header{
   text-align:center;
   margin-bottom:32px;
@@ -116,6 +116,7 @@ hr.linha{
   margin:26px 0;
 }
 
+/* Seções gerais */
 .section h2{
   text-align:center;
   font-size:1.6rem;
@@ -156,6 +157,7 @@ hr.linha{
   margin-bottom:3px;
 }
 
+/* Artistas */
 .artistas-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -179,6 +181,7 @@ hr.linha{
   font-weight:600;
 }
 
+/* Linha do tempo */
 .steps-timeline{
   position:relative;
   max-width:780px;
@@ -250,14 +253,14 @@ hr.linha{
 }
 
 /* -------------------------------------------------- */
-/* 🔥 Ajuste 2 — Seção de oferta sem buracos */
+/* 🔥 AJUSTE DA OFERTA — SEM ESPAÇOS */
 /* -------------------------------------------------- */
 
 .offer-box{
   background:var(--cinza-claro);
   border:1px solid #d9ddff;
   border-radius:14px;
-  padding:20px;
+  padding:16px !important;
   max-width:800px;
   margin:auto;
 }
@@ -266,14 +269,15 @@ hr.linha{
   text-align:center;
   font-size:1.4rem;
   font-weight:700;
-  margin-bottom:8px;
+  margin-bottom:6px !important;
+  padding-bottom:0 !important;
 }
 
 /* cola mockup + lista */
 .offer-flex{
   display:flex;
   flex-direction:column;
-  gap:10px !important; /* antes era 20 */
+  gap:4px !important; /* antes era 20 */
   align-items:center;
   margin-top:0 !important;
   padding-top:0 !important;
@@ -301,6 +305,7 @@ hr.linha{
   margin-bottom:6px;
 }
 
+/* compra segura */
 .secure-img-below{
   max-width:260px;
   width:100%;
@@ -316,17 +321,13 @@ hr.linha{
 }
 
 /* -------------------------------------------------- */
-/* 🔥 Ajuste 3 — Garantia menor */
+/* 🔥 GARANTIA REDUZIDA (SEM SUMIR) */
 /* -------------------------------------------------- */
 
 .garantia-img{
-  display:none; /* oculta a grande */
-}
-
-.garantia-img-small{
   width:140px !important;
-  display:block;
-  margin:0 auto 12px auto;
+  display:block !important;
+  margin:0 auto 14px auto !important;
 }
 
 .garantia-texto{
@@ -337,6 +338,7 @@ hr.linha{
   margin:0 auto;
 }
 
+/* Depoimentos */
 .depo-grid{
   display:grid;
   grid-template-columns:1fr;
@@ -365,7 +367,7 @@ hr.linha{
   object-fit:cover;
   object-position:center;
   margin:0 auto 8px auto;
-  border:3px solid(var(--azul-claro));
+  border:3px solid var(--azul-claro);
   display:block;
 }
 
